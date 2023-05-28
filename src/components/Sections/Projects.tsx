@@ -3,10 +3,11 @@ import { useTheme, Text } from "@nextui-org/react";
 import ScrollStaggerText from "../Text/ScrollStaggerText";
 import ViewProjects from "../Projects/ViewProjects";
 import "./Projects.scss";
+import Line from "../Global/Line";
 
 export default function Projects() {
   return (
-    <div className="projects section" style={{ height: "120vh" }}>
+    <div className="projects section" style={{ height: "124vh" }}>
       <ScrollStaggerText
         text={"Works & Projects"}
         fontSize={100}
@@ -16,6 +17,7 @@ export default function Projects() {
         stagger={50}
         triggerAfter={300}
       />
+      <Line />
       <ViewProjects />
     </div>
   );

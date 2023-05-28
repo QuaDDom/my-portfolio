@@ -24,7 +24,7 @@ export default function Menu({ isOpen }: Props) {
             data-cursor-exclusion
             className="option"
           >
-            About
+            Intro
           </Text>
           <Text
             size={85}
@@ -32,7 +32,7 @@ export default function Menu({ isOpen }: Props) {
             data-cursor-exclusion
             className="option"
           >
-            Intro
+            About
           </Text>
           <Text
             size={85}

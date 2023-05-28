@@ -12,6 +12,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const { setTheme } = useNextTheme();
   const { theme, isDark } = useTheme();
+
   return (
     <>
       <Menu isOpen={isOpen} />
