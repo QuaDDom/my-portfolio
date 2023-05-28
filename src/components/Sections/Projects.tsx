@@ -7,7 +7,7 @@ import Line from "../Global/Line";
 
 export default function Projects() {
   return (
-    <div className="projects section" style={{ height: "124vh" }}>
+    <div className="projects section" style={{ height: "124vh" }} id="projects">
       <ScrollStaggerText
         text={"Works & Projects"}
         fontSize={100}

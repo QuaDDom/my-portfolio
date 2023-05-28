@@ -7,7 +7,7 @@ import Spline from "@splinetool/react-spline";
 
 export default function Intro() {
   return (
-    <div className="intro section">
+    <section className="intro section" id="intro">
       <div className="welcome">
         <StaggerText
           text={"Hi I'm"}
@@ -41,6 +41,12 @@ export default function Intro() {
           triggerAfter={1000}
         />
         <Spacer y={3.5} />
+        <div className="scrollIndicatorContainer">
+          <div className="scrollDown">
+            <span></span>
+          </div>
+          <p>Scroll Down</p>
+        </div>
       </div>
       <div className="effect">
         <div className="element">
@@ -52,6 +58,6 @@ export default function Intro() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

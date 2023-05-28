@@ -39,6 +39,76 @@
   }
 }
 
+.scrollIndicatorContainer {
+  display: inline-flex;
+  align-items: center;
+  p {
+    font-weight: 100;
+  }
+  .scrollDown {
+    width: 45px;
+    height: 70px;
+    border: #fff solid 2px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    transform: scale(0.5);
+    position: relative;
+    span {
+      background: #fff;
+      width: 5px;
+      height: 10px;
+      border-radius: 30px;
+      margin-top: 10px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: none;
+        border-right: 2px solid #fff;
+        border-top: 2px solid #fff;
+        transform: translateY(-10px) rotate(135deg);
+        left: -5px;
+        margin-top: 10px;
+        animation: scrollDown 1.8s infinite linear;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: none;
+        border-right: 2px solid #fff;
+        border-top: 2px solid #fff;
+        transform: translateY(-10px) rotate(135deg);
+        left: -5px;
+        margin-top: 10px;
+        animation: scrollDown 1.8s infinite linear;
+        animation-delay: 0.8s;
+      }
+    }
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: 25px;
+    opacity: 1;
+  }
+  100% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+}
+
 @keyframes splineAppear {
   from {
     opacity: 0;

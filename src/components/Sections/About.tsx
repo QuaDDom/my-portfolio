@@ -9,7 +9,7 @@ import Line from "../Global/Line";
 
 export default function About() {
   return (
-    <div className="about section">
+    <div className="about section" id="about">
       <div className="aboutMe">
         <ScrollStaggerText
           text={"About me"}
