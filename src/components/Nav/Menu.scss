@@ -73,3 +73,17 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .menuContainer {
+    width: 100vw;
+    height: 100vh;
+    .menu {
+      width: 100vw;
+      height: 100vh;
+      .options {
+        width: 100%;
+      }
+    }
+  }
+}

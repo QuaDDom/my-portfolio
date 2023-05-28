@@ -18,6 +18,7 @@ export default function Intro() {
           stagger={50}
         />
         <StaggerText
+          h1
           duration={1.2}
           stagger={50}
           text={"Mateo Leal"}

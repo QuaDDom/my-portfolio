@@ -4,9 +4,10 @@ import "./Project.scss";
 interface Props {
   img: string;
   title: string;
+  githubLink: string;
 }
 
-export default function Project({ img, title }: Props) {
+export default function Project({ img, title, githubLink }: Props) {
   return (
     <div
       className="project"

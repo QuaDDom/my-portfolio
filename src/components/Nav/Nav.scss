@@ -17,11 +17,18 @@
       align-items: center;
       justify-content: space-between;
       padding-left: 20px;
-      width: 8vw;
+      width: 140px;
       .link {
         color: #ccc;
         font-size: 1.6em;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation {
+    padding: 0;
+    width: 100vw;
   }
 }

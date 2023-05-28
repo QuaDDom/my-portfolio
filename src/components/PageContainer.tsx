@@ -5,12 +5,14 @@ import Intro from "./Sections/Intro";
 import Projects from "./Sections/Projects";
 import { Cursor } from "react-creative-cursor";
 import { ScrollerMotion } from "scroller-motion";
-import { useTheme } from "@nextui-org/react";
+import { Switch, useTheme } from "@nextui-org/react";
+import { useTheme as useNextTheme } from "next-themes";
 import "./PageContainer.scss";
 import Nav from "./Nav/Nav";
 import Contact from "./Sections/Contact";
 
 export default function PageContainer() {
+  const { setTheme } = useNextTheme();
   const { theme, isDark } = useTheme();
 
   return (
