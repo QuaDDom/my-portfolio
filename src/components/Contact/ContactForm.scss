@@ -1,0 +1,15 @@
+.contactFormContainer {
+  height: 700px;
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  .inputsContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    .inputContainer {
+      margin: 40px 0;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import ScrollStaggerText from "../Text/ScrollStaggerText";
 import "./Contact.scss";
 import Line from "../Global/Line";
 import Button from "../Global/Button";
+import ContactForm from "../Contact/ContactForm";
 
 export default function Contact() {
   return (
@@ -38,6 +39,7 @@ export default function Contact() {
         triggerAfter={1500}
       />
       <Spacer />
+      <ContactForm />s
       <Button />
     </div>
   );
