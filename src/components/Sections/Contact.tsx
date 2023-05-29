@@ -18,6 +18,24 @@ export default function Contact() {
         className="aboutTitle"
       />
       <Line />
+      <ScrollStaggerText
+        text={"Building digital experiences that leave lasting impressions"}
+        fontSize={50}
+        fontFamily={"'Averta-Semibold', serif"}
+        height={75}
+        duration={1.1}
+        stagger={50}
+        triggerAfter={400}
+      />
+      <ScrollStaggerText
+        text={"let's create something extraordinary together."}
+        fontSize={50}
+        fontFamily={"'Averta-Semibold', serif"}
+        height={75}
+        duration={1.1}
+        stagger={50}
+        triggerAfter={1500}
+      />
       <Spacer />
     </div>
   );
