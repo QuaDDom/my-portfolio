@@ -29,38 +29,40 @@ function ContactForm() {
   }, []);
 
   return (
-    <div className="contactFormContainer">
-      <div className="inputsContainer">
-        <div className="inputContainer">
-          <Input
-            className="nextInput"
-            clearable
-            underlined
-            labelPlaceholder="Full name"
-            width="620px"
-            size="xl"
-          />
+    <div className="contactFormContainer" ref={componentRef}>
+      {isVisible && (
+        <div className="inputsContainer">
+          <div className="inputContainer">
+            <Input
+              className="nextInput"
+              clearable
+              underlined
+              labelPlaceholder="Full name"
+              width="620px"
+              size="xl"
+            />
+          </div>
+          <div className="inputContainer">
+            <Input
+              className="nextInput"
+              clearable
+              underlined
+              labelPlaceholder="Email"
+              width="620px"
+              size="xl"
+            />
+          </div>
+          <div className="inputContainer">
+            <Textarea
+              className="nextInput"
+              labelPlaceholder="Subject"
+              minRows={5}
+              width="620px"
+              size="xl"
+            />
+          </div>
         </div>
-        <div className="inputContainer">
-          <Input
-            className="nextInput"
-            clearable
-            underlined
-            labelPlaceholder="Email"
-            width="620px"
-            size="xl"
-          />
-        </div>
-        <div className="inputContainer">
-          <Textarea
-            className="nextInput"
-            labelPlaceholder="Subject"
-            minRows={5}
-            width="620px"
-            size="xl"
-          />
-        </div>
-      </div>
+      )}
     </div>
   );
 }
