@@ -3,10 +3,11 @@ import React from "react";
 import ScrollStaggerText from "../Text/ScrollStaggerText";
 import "./Contact.scss";
 import Line from "../Global/Line";
+import Button from "../Global/Button";
 
 export default function Contact() {
   return (
-    <div className="contact section">
+    <div className="contact section" id="contact">
       <ScrollStaggerText
         text={"Contact"}
         fontSize={100}
@@ -37,6 +38,7 @@ export default function Contact() {
         triggerAfter={1500}
       />
       <Spacer />
+      <Button />
     </div>
   );
 }

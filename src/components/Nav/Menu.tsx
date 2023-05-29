@@ -57,6 +57,15 @@ export default function Menu({ isOpen }: Props) {
           >
             Projects
           </Text>
+          <Text
+            size={85}
+            data-cursor-size={50}
+            data-cursor-exclusion
+            className="option"
+            onClick={() => hadleClick("contact")}
+          >
+            Contact
+          </Text>
           <div className="reachMe"></div>
         </div>
         <div className="contactEmail"></div>
