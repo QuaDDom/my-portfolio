@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className="projects section" style={{ height: "124vh" }} id="projects">
       <ScrollStaggerText
-        text={"Works & Projects"}
+        text={"Recent Works"}
         fontSize={100}
         fontFamily={"'Averta-Semibold', serif"}
         height={150}

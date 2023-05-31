@@ -72,19 +72,25 @@ export default function Contact() {
         triggerAfter={1500}
       />
       <Spacer />
-      {isVisible && (
-        <div
-          className="emailButton"
-          data-cursor-size={90}
-          data-cursor-exclusion
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <p onClick={handleClick}>SEND ME AN EMAIL</p>
-        </div>
-      )}
+      <div
+        className="emailButtonContainer"
+        data-cursor-size={90}
+        data-cursor-exclusion
+      >
+        {isVisible && (
+          <div
+            className="emailButton"
+            data-cursor-size={90}
+            data-cursor-exclusion
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <p onClick={handleClick}>SEND ME AN EMAIL</p>
+          </div>
+        )}
+      </div>
       {/* <Button /> */}
     </div>
   );
