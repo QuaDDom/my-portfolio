@@ -17,7 +17,12 @@ export default function Nav() {
     <>
       <Menu isOpen={isOpen} />
       <nav className="navigation">
-        <Text size={24} className="name">
+        <Text
+          size={24}
+          className="name"
+          data-cursor-exclusion
+          data-cursor-size={40}
+        >
           Mateo Leal
         </Text>
         <div className="spacer">
@@ -27,6 +32,7 @@ export default function Nav() {
               href="https://github.com/QuaDDom"
               target="_blank"
               data-cursor-size={50}
+              data-cursor-exclusion
             >
               <BsGithub />
             </Link>
@@ -34,11 +40,17 @@ export default function Nav() {
               className="link"
               href="https://twitter.com/LeQuaddom"
               target="_blank"
+              data-cursor-exclusion
               data-cursor-size={50}
             >
               <AiFillTwitterCircle />
             </Link>
-            <Link className="link" href="/" data-cursor-size={50}>
+            <Link
+              className="link"
+              href="/"
+              data-cursor-size={50}
+              data-cursor-exclusion
+            >
               <ImStackoverflow />
             </Link>
           </div>
